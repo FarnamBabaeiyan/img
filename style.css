@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: url(background.jpg);
+    background-size: cover;
+    font-family: Verdana;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* header */
+header{
+    background-color: rgba(255, 255, 255, 0.88);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-color: #e7e7e7;
+}
+
+header svg{
+    vertical-align: middle;
+    margin-left: 15px;
+}
+header div.right{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 95px;
+}
+
+header div.right a{
+    font-size: 17px;
+    color: #4bc466;
+    padding-top: 6px;
+    font-weight: 600;
+}
+header div.right a:hover{
+    color: #319748;
+}
+
+header div.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 95px;
+}
+header div.left div.app a{
+margin-left:12px;
+font-size: 15px;
+color: #5f5f5f;
+font-weight: 500;
+}
+header div.left div.app a:hover{
+    color: #000000;
+    font-weight: 540;
+    }
+header div.left div.help a{
+    color: #5f5f5f;
+    font-size: 15px;
+    margin-left: 30px;
+    
+    font-weight: 500;
+}
+header div.left div.help a:hover{
+color: #000000;
+font-weight: 540;
+}
+/* body */
+div.body div.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 60px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+div.body div.box div.header-box{
+border: 1px solid black;
+background-color: rgba(0, 0, 0, 0.808);
+border-radius: 8px;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+text-align: center;
+}
+div.body div.box div.header-box h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    padding-right: 70px;
+}
+div.body div.box div.header-box svg{
+    vertical-align: middle;
+    padding-right: 45px;
+}
+div.body div.box form{
+    background-color: #1f1f1f7f;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    border-top: none;
+    padding: 40px 35px 35px;
+}
+div.body div.box form div.username{
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+div.body div.box form div.username label{
+   
+   color: #858585;
+   font-size: 17px;
+}
+div.body div.box form div.username input{
+    border: none;
+    padding: 10px;
+   outline: none;
+   font-size: 17px;
+}
+div.body div.box form div.password{
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+div.body div.box form div.password label{
+   
+   color: #858585;
+   font-size: 17px;
+}
+div.body div.box form div.password input{
+    border: none;
+    padding: 10px;
+   outline: none;
+   font-size: 17px;
+}
+div.body div.box form div.password svg{
+    vertical-align: middle;
+}
+div.body div.box form div.forget-link{
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 15px;
+    text-decoration: underline;
+    font-weight: 600;
+    padding-left: 5px;
+}
+div.body div.box form div.submit{
+    margin-top: 50px;
+    text-align: center;
+   
+}
+div.body div.box form div.submit input{
+    padding: 15px 115px;
+    border: 1px solid #009cfc;
+    border-radius: 5px;
+    background-color: #009cfc;
+    color: #ebebeb;
+    font-size: 20px;
+}
+div.body div.footer-box {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 15px 25px ;
+   border-radius: 5px;
+}
+div.body div.footer-box div.right{
+    color: #ebebeb;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: right;
+    width: 48%;
+}
+div.body div.footer-box div.right svg{
+vertical-align: middle;
+}
+div.body div.footer-box div.left{
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    color: #ebebeb;
+    font-size: 15px;
+    font-weight: 600;
+}
+div.body div.footer-box div.left svg{
+vertical-align: middle;
+}
+
+/* button */
+div.more-info{
+    position: fixed;
+    top: 20%;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+div.more-info svg{
+vertical-align: middle;
+}
+div.more-info a:hover::after{
+    font-size: 15px;
+    padding-left:70px ;
+    content: "تخت جمشید - فارس";
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-weight: 600;
+    margin-right: 15px;
+}
+/* footer */
+div.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 12px;
+}
+div.footer div.left-side a{
+    margin-left: 25px;
+    transition: 0.2s;
+}
+div.footer div.left-side a:hover{
+    color: gray;
+}
+
+
+
+
+
